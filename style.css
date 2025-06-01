@@ -31,6 +31,13 @@ main {
   max-width: 800px;
   margin: auto;
 }
+img.miniatura {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
 form input, form select, form textarea, form button {
   width: 100%;
   max-width: 600px;
@@ -47,4 +54,19 @@ form button {
 }
 form button:hover {
   background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  img.miniatura {
+    width: 100%;
+    max-width: 100%;
+  }
+  main {
+    padding: 10px;
+  }
 }
