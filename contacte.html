@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacte</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Inici</a>
+      <a href="roma.html">Roma</a>
+      <a href="serdegna.html">Sardenya</a>
+      <a href="lanzarote.html">Lanzarote</a>
+      <a href="contacte.html">Contacte</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Formulari de contacte</h1>
+    <form>
+      <label for="nom">Nom:</label><br>
+      <input type="text" id="nom" name="nom" required><br><br>
+
+      <label for="email">Correu electrònic:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="motiu">Motiu del contacte:</label><br>
+      <select id="motiu" name="motiu">
+        <option value="pregunta">Pregunta</option>
+        <option value="comentari">Comentari</option>
+        <option value="altres">Altres</option>
+      </select><br><br>
+
+      <label for="viatge">Viatge relacionat:</label><br>
+      <select id="viatge" name="viatge">
+        <option value="roma">Roma</option>
+        <option value="serdegna">Sardenya</option>
+        <option value="lanzarote">Lanzarote</option>
+      </select><br><br>
+
+      <label for="missatge">Missatge:</label><br>
+      <textarea id="missatge" name="missatge" rows="5" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2024 Diari de David - HTML & CSS</p>
+  </footer>
+</body>
+</html>
